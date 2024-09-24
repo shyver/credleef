@@ -8,7 +8,7 @@ const Navbar = () => {
   const sections = ['Intro', 'Import', 'Create', 'Showcase', 'Waitlist']
   const sectionButtons = () => {
     return (
-      <div className='flex flex-row  gap-10'>
+      <div className='flex flex-row  gap-10 select-none'>
         {sections.map((section, index) => (
           <div key={index} className='text-[18px] font-bold cursor-pointer'>
             {section}
@@ -18,7 +18,7 @@ const Navbar = () => {
     )
   }
   return (
-    <div className='bg-white h-[70px] w-full text-black flex flex-row items-center justify-between fixed px-20 '>
+    <div className='bg-white bg-opacity-20 backdrop-blur-md h-[70px] w-full text-black flex flex-row items-center justify-between fixed px-20 select-none z-30 '>
         <NameLogo/>
         {sectionButtons()}
         <div className='flex gap-2 items-center'>
