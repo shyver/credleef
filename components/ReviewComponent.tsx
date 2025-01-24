@@ -1,29 +1,42 @@
-import { icon, stars } from '@/public/images'
+import { stars } from '@/public/images'
 import Image from 'next/image'
 import React from 'react'
-import Tilt from 'react-next-tilt'
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto({ weight: ['400', '700'], subsets: ['latin'] })
 
 const ReviewComponent = () => {
   return (
-    <Tilt className='' >
-    <div className='w-[255px] h-[176px] bg-white rounded-[20px] shadow-[0_0px_30px_-5px_rgba(0,0,0,0.3)] flex flex-col justify-between  '
-    >
-      <div className='flex flex-col px-4 py-2 gap-3'>
+    <div className='w-[328px] h-[272px] rounded-[16px] bg-white py-6 px-4 flex flex-col justify-between '>
+      <div>
 
-        <Image src={stars} alt='stars'  />
+        <div className='flex flex-row justify-between' >
+        <Image src={stars} alt ="stars"/>
+        <h3 className={`text-[#5F7482] text-[16px] font-medium ${roboto.className} `}>
+          1 month ago
+        </h3>
+        </div>
+        <div className={`text-[16px] font-medium ${roboto.className} mt-4 px-3 `} >
+        The customer service was quick and
+        gave me the right answer
+        </div>
+      
+      </div>
+      <div className='flex flex-row '>
+      <div className={`w-12 h-10 text-[14px] font-bold ${roboto.className} text-[#2F8E60]  flex items-center justify-center`} >
+        M
+      </div>
+      <div className='flex flex-col'>
+        <div className={`text-[16px] font-bold ${roboto.className} text-[#2F8E60]`} >
+        Mickey Raymond
         
-        <div className='w-[153px] h-[12px] bg-[#D9D9D9] rounded-[4px] mb-1 ' />
-        <div className='w-[205px] h-[12px] bg-[#D9D9D9] rounded-[4px] ' />
-        <div className='w-[205px] h-[12px] bg-[#D9D9D9] rounded-[4px] ' />
-        <div className='w-[205px] h-[12px] bg-[#D9D9D9] rounded-[4px] ' />
+        </div>
+        <div className={`text-[16px] font-medium ${roboto.className} text-[#5F7482]`}>
+        Cornwall • PigeonWare
+        </div>
       </div>
-
-      <div className='w-full flex items-end justify-end'>
-      <Image src={icon} alt='icon' height={33} className='' />
       </div>
-
     </div>
-    </Tilt>
   )
 }
 

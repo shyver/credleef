@@ -10,6 +10,7 @@ import capterra from './capterra.svg'
 import yelp from './yelp.svg'
 import googlePlayStore from './google-play-store.svg'
 import formBuilder from './formbuilder.png'
+import testimonialsByCredleef from './testimonialsbycredleef.svg'
 export {
     icon,
     model,
@@ -22,6 +23,7 @@ export {
     capterra,
     yelp,
     googlePlayStore,
-    formBuilder
+    formBuilder,
+    testimonialsByCredleef
     
 }
