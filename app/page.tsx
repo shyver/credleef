@@ -4,7 +4,7 @@ import Import from "@/components/sections/Import";
 import Image from "next/image";
 import FormBuilder from "@/components/sections/FormBuilder";
 import Customizable from "@/components/sections/Customizable";
-import WaitlistForm from "@/components/sections/WaitlistForm";
+
 
 export default function Home() {
   return (
